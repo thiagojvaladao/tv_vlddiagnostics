@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLD Diagnostics</title>
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="img/vld-icon.png" type="image/x-icon" />
+
+
+
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-2">
+            <a class="navbar-brand" href="#">
+                <span>VLD</span>
+                <p>Diagnostics</p>
+            </a>
+            <div class="col-md-6 offset-md-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#info-container">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-3">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="O que você quer estudar?"
+                                aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <select>
+                <option>BR</option>
+                <option>EN</option>
+                <option>ES</option>
+            </select>
+        </div>
+    </nav>
+    <!-- Carousel Slider -->
+    <div class="container" id="slider-container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/vld_banner-1.jpg" class="d-block w-100" alt="Diagnósticos de Análise de Vibração" />
+                    <div class="carousel-caption">
+                        <h5>Diagnósticos de Análise de Vibração</h5>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/vld_banner-2.jpg" class="d-block w-100" alt="Guia de Inspeção Sensitiva" />
+                    <div class="carousel-caption">
+                        <h5>Dicionário do Analista</h5>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/vld_banner-3.jpg" class="d-block w-100" alt="Aplicativos" />
+                    <div class="carousel-caption">
+                        <h5>Aplicativos</h5>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--mini-banners-->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-book-half"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">eBooks</h5>
+                            <p class="card-text secondary-color">
+                                Do básico ao avançado, um conteúdo completo sobre Análise de Vibração para você
+                                saber lidar com diversas situações.
+                            </p>
+                            <a href="#" class="btn btn-dark">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-book-half"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Catálogos e Manuais</h5>
+                            <p class="card-text secondary-color">
+                                Uma coleção dinâmica de catálogos e manuais que centraliza uma variedade de informações
+                                relevantes para à análise.
+                            </p>
+                            <a href="#" class="btn btn-dark">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-cup-hot-fill"></i>
+                        <div class="card-body primary-color">
+                            <h5 class="card-title primary-color">Estudos de Casos</h5>
+                            <p class="card-text secondary-color">
+                                Uma coleção de situações vividas que podem servir de guia para seu próximo desafio.
+                            </p>
+                            <a href="#" class="btn btn-dark">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nossa bibilioteca -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Nossa bibilioteca</h2>
+            <p class="subtitle secondary-color">
+                Conheça nossos eBooks em áreas complementares para o Profissional de Análise de Vibrações
+            </p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-1.jpg" alt="Rolamentos" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção e Correção</p>
+                        <h3>Rolamentos</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-2.jpg" alt="Lubrificação Industrial" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção e Correção</p>
+                        <h3>Lubrificação Industrial</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-3.jpg" alt="Alinhamento de Máquinas" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção e Correção</p>
+                        <h3>Alinhamento de Máquinas</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-4.jpg" alt="Balanceamento de rotores em campo" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção e Correção</p>
+                        <h3>Balanceamento em campo</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-5.jpg" alt="Inspeção Sensitiva" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção e Correção</p>
+                        <h3>Inspeção Sensitiva</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-6.jpg" alt="Termografia Infravermelha" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Termografia</p>
+                        <h3>Termografia Infravermelha</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-7.jpg" alt="Análise ODS" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção Proativa</p>
+                        <h3>Análise ODS</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-8.jpg" alt="Análise de Causa Raiz (RCA)" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Manutenção Proativa</p>
+                        <h3>Análise de Causa Raiz (RCA)</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/vld_eBooks-9.jpg" alt="Manutenção na Indústria 4.0" class="img-fluid" />
+                    <div class="banner-content">
+                        <p class="secondary-color">Indústria 4.0</p>
+                        <h3>Manutenção na Indústria 4.0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sobre -->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Quem sou eu?</h2>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-8 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="subtitle primary-color">
+                                Meu nome é Thiago Valadão e vou te contar um pouco sobre mim e o projeto VLD
+                                Diagnostics:
+                            </p>
+                            <p class="subtitle secondary-color">
+                                Trabalho com Manutenção Preditiva desde 2004 e possuo conhecimentos avançados em Análise
+                                de Vibração, Manutenção de Rolamentos, Lubrificação e Análise de Falhas. Sou uma pessoa
+                                apaixonada
+                                por tecnologia e manutenção e o site VLD Diagnostics é a concretização do
+                                meu maior objetivo que é fazer com que mais pessoas vejam que a área de Manutenção
+                                Preditiva é uma boa opção de carreira e entendam que o sinal de vibração não é a única
+                                coisa que um técnico deve saber para ter destaque nessa profissão e na manutenção
+                                industrial.
+                            </p>
+                            <br>
+                            <figure>
+                                <blockquote>
+                                    "O essencial é invisível aos olhos"
+                                </blockquote>
+                                <footer>
+                                    — <cite class="author">Antoine de Saint-Exupéry</cite>, <cite class="company">O
+                                        Pequeno Príncipe.</cite>
+                                </footer>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" id="info-banner">
+                    <img src="img/vld_thiagoValadao.jpg" alt="Informações" class="img-thumbnail img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-lighter-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- FOOTER DETAILS -->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-9 col-md-6" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <div class="col-3 col-md-4 footer-column">
+                                <img src="img/vlf_form.png" alt="Informações" class="float" />
+                                <div class="float-right">
+                                </div>
+                            </div>
+                            <form action="/action_page.html">
+                                <div class="form-group">
+                                    <label for="name">Nome:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensagem:</label>
+                                    <textarea class="form-control" id="message" rows="3"
+                                        placeholder="Digite sua mensagem"></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate">
+                                    <label class="form-check-label" for="flexCheckIndeterminate">
+                                        Aceito receber novidades por e-mail
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-outline-success">Enviar</button>
+                                <p>Não se preocupe! Não compartilharemos seus dados e também não enviaremos spam.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER BOTTOM -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">VLD Diagnostics &copy; 2023</p>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <a href="https://www.linkedin.com/in/thiago-valadão-36863a37" target="_blank"
+                                rel="noopener"><i class="bi bi-linkedin"></i></a>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

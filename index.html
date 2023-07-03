@@ -44,7 +44,13 @@
                 <span>VLD</span>
                 <p>Diagnostics</p>
             </a>
-            <div class="col-md-6 offset-md-1">
+            <div class="col-md-3 offset-md-">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <div class="col-md-7 ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
                     aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
@@ -66,25 +72,40 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#footer">Contato</a>
                         </li>
+                        <select class=“form-select form-select-lg disabled” aria-label=“Seletor de idiomas”>
+                            <option selected>Português</option>
+                            <option value=“en”>English</option>
+                            <option value=“es”>Español</option>
+                        </select>
                     </ul>
                 </div>
             </div>
+            <!--
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-3">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="O que você quer estudar?"
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                 aria-label="Search">
                             <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
                         </form>
                     </div>
                 </div>
+            </div>-->
+            <!--
+            <div class=“container”>
+                <div class=“row”>
+                    <div class=“col-12”>
+                        <select
+                            class=“form-select form-select-lg disabled” aria-label=“Seletor de idiomas”>
+                            <option selected>Português</option>
+                            <option value=“en”>English</option>
+                            <option value=“es”>Español</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <select>
-                <option>BR</option>
-                <option>EN</option>
-                <option>ES</option>
-            </select>
+        -->
         </div>
     </nav>
     <!-- Carousel Slider -->
